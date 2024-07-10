@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "wullies-reconsole",
+	"version": "${version}",
+	"name": "wullie's reconsole",
+	"description": "wullie's reconsole a custom mod for my server ",
+	"authors": [
+		"wullie"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL3",
+	"icon": "assets/wullies-reconsole/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.wulliestudios.WulliesReconsole"
+		],
+		"client": [
+			"com.wulliestudios.WulliesReconsoleClient"
+		],
+		"fabric-datagen": [
+			"com.wulliestudios.WulliesReconsoleDataGenerator"
+		]
+	},
+	"mixins": [
+		"wullies-reconsole.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
